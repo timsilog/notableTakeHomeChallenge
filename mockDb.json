@@ -1,0 +1,47 @@
+{
+  "doctors": {
+    "d1": {
+      "firstName": "Julius",
+      "lastName": "Hibbert",
+      "calendarId": "c1"
+    },
+    "d2": {
+      "firstName": "Algernop",
+      "lastName": "Krieger",
+      "calendarId": "c2"
+    },
+    "d3": {
+      "firstName": "Nick",
+      "lastName": "Rivera",
+      "calendarId": "c3"
+    }
+  },
+  "calendars": {
+    "c1": {},
+    "c2": {
+      "5/7/2020": {
+        "3:30": [
+          {
+            "id": 1,
+            "kind": "New Patient"
+          },
+          {
+            "id": 3,
+            "kind": "New Patient"
+          }
+        ],
+        "3:45": [
+          {
+            "id": 4,
+            "kind": "Follow-up"
+          },
+          {
+            "id": 5,
+            "kind": "Follow-up"
+          }
+        ]
+      }
+    },
+    "c3": {}
+  }
+}

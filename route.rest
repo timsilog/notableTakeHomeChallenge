@@ -1,0 +1,38 @@
+GET http://localhost:3000/doctors
+
+###
+
+POST http://localhost:3000/addappt
+Content-Type: application/json
+
+{
+  "doctorId": "d2",
+  "date": "2020-05-07T03:30:00",
+  "kind": "New Patient"
+}
+
+###
+
+POST http://localhost:3000/addappt
+Content-Type: application/json
+
+{
+  "doctorId": "d2",
+  "date": "2020-05-07T03:45:00",
+  "kind": "Follow-up"
+}
+
+###
+
+GET http://localhost:3000/appointments?doctorId=d2&date=2020-05-07T03:30
+
+###
+
+DELETE http://localhost:3000/delappt
+Content-Type: application/json
+
+{
+  "doctorId": "d2",
+  "date": "2020-05-07T03:30:00",
+  "apptId": "2"
+}
